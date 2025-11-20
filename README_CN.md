@@ -13,6 +13,14 @@
 
 ---
 
+## 效果演示
+
+<video src="https://github.com/user-attachments/assets/c7c53877-7974-4981-a2dc-ac2939a07e28"
+controls="controls" width="800">
+</video>
+
+---
+
 ## 背景与动机
 
 在开发 Jetpack Compose 应用时，我们经常需要使用底部弹窗（Bottom Sheet）来展示额外信息或交互选项。虽然 Compose 提供了一些现成的方案，但在实际项目中，我们发现它们都存在一些局限性。

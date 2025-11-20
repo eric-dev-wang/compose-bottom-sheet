@@ -13,6 +13,14 @@
 
 ---
 
+## Demo
+
+<video src="https://github.com/user-attachments/assets/c7c53877-7974-4981-a2dc-ac2939a07e28"
+controls="controls" width="800">
+</video>
+
+---
+
 ## Background and Motivation
 
 When developing Jetpack Compose applications, we frequently need to use Bottom Sheets to display additional information or interaction options. While Compose provides some ready-made solutions, we've found they all have limitations in real-world projects.
