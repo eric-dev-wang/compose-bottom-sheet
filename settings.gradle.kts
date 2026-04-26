@@ -19,6 +19,15 @@ dependencyResolutionManagement {
     }
 }
 
+plugins {
+    id("org.gradle.toolchains.foojay-resolver-convention") version "1.0.0"
+}
+
+enableFeaturePreview("TYPESAFE_PROJECT_ACCESSORS")
+
 rootProject.name = "BottomSheet"
+
 include(":app")
- 
+include(":shared")
+include(":bottomsheet-mpp")
+include(":bottomsheet-androidx")
