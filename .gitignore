@@ -7,3 +7,8 @@ captures
 .externalNativeBuild
 .cxx
 local.properties
+.derived/
+.kotlin/
+.tasks.txt
+**/xcuserdata/
+.swiftpm-locks/

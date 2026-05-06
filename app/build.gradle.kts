@@ -1,20 +1,18 @@
 plugins {
     alias(libs.plugins.android.application)
-    alias(libs.plugins.kotlin.android)
     alias(libs.plugins.kotlin.compose)
     alias(libs.plugins.kotlin.serialization)
 }
 
 android {
-    namespace = "com.ericwang.example.bottomsheet"
+    namespace = "com.ericdevwang.bottomsheet.example"
     compileSdk {
         version = release(36)
     }
 
     defaultConfig {
-        applicationId = "com.ericwang.example.bottomsheet"
-        minSdk = 35
-        targetSdk = 36
+        applicationId = "com.ericdevwang.bottomsheet.example"
+        minSdk = 31
         versionCode = 1
         versionName = "1.0"
 
@@ -46,12 +44,6 @@ kotlin {
 }
 
 dependencies {
-    implementation(libs.androidx.lifecycle.runtime.compose)
-    implementation(libs.androidx.lifecycle.viewmodel.compose)
-    implementation(libs.androidx.lifecycle.viewmodel.navigation3)
-    implementation(libs.androidx.navigation3.runtime)
-    implementation(libs.androidx.navigation3.ui)
-
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.activity.compose)
     implementation(platform(libs.androidx.compose.bom))
@@ -59,6 +51,9 @@ dependencies {
     implementation(libs.androidx.compose.ui.graphics)
     implementation(libs.androidx.compose.ui.tooling.preview)
     implementation(libs.androidx.compose.material3)
+
+    implementation(project(":shared"))
+
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
